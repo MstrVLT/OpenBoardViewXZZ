@@ -34,6 +34,17 @@ replacement for the "Test_Link" software and "Landrex".
 
 ### Prerequisites
 
+#### Windows
+
+Download the installer msys2 https://www.msys2.org/
+
+In console ucrt64:
+
+    $ pacman -Sy
+    $ pacman -S --noconfirm make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-SDL2
+    $ CMAKE_POLICY_VERSION_MINIMUM=3.5 PYTHONUTF8=1 ./build.sh --recompile
+
+
 #### macOS
 	$ brew install cmake sdl2
 

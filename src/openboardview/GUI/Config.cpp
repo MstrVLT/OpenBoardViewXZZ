@@ -183,7 +183,7 @@ void Config::writeToConfig(Confparse &obvconfig) {
 
 
 #ifdef _WIN32
-	obvconfig.WriteStr("pdfSoftwarePath", pdfSoftwarePath);
+	obvconfig.WriteStr("pdfSoftwarePath", pdfSoftwarePath.c_str());
 #endif
 
 	obvconfig.WriteBool("slowCPU", slowCPU);

@@ -25,7 +25,9 @@ public:
 
 	int pinA1threshold = 3; // pincount of package to show 1/A1 pin
 	int netWebThickness = 2;
-
+#ifdef _WIN32
+	std::string pdfSoftwarePath = "";
+#endif
 	float pinSizeThresholdLow = 0.0f;
 	bool pinShapeSquare       = false;
 	bool pinShapeCircle       = true;
